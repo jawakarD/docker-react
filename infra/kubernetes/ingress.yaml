@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: react-ingress
+  namespace: production-react
+
+spec:
+  rules:
+  - host: a9f7944fd427011ea8fec02215b2c422-608798107.us-east-1.elb.amazonaws.com
+    http:
+      paths:
+      - backend:
+          serviceName: react-service
+          servicePort: 80
