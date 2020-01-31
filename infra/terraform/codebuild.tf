@@ -199,7 +199,7 @@ phases:
       - echo Images pushed to ECR
       - echo Setting up Kustomize for auto-deploy
       - mkdir kustomize && cd kustomize
-      - curl  -O -L "-H Authorization:token 13ec0d9c764c909693d8070aae709cbe0b9f4c01" -H "Accept:application/vnd.github.v3.raw" https://api.github.com/repos/jawakarD/docker-react/contents/infra/kubernetes/deployment.yaml
+      - curl  -O -L "-H Authorization:token e7943abda2a9f7262086ec6597a32d034388b465" -H "Accept:application/vnd.github.v3.raw" https://api.github.com/repos/jawakarD/docker-react/contents/infra/kubernetes/deployment.yaml
       - |
         cat <<KUSTOMIZE >kustomization.yaml
         apiVersion: kustomize.config.k8s.io/v1beta1
